@@ -1,0 +1,23 @@
+DROP TABLE IF EXISTS baseUrl;
+DROP TABLE IF EXISTS action;
+DROP TABLE IF EXISTS actionParams;
+DROP TABLE IF EXISTS dataTypes;
+
+ 
+CREATE TABLE action (
+id INTEGER   NOT NULL PRIMARY KEY,
+name TEXT NOT NULL,
+desc TEXT );
+
+
+CREATE TABLE dataTypes (
+id INTEGER    NOT NULL PRIMARY KEY,
+typeName TEXT NOT NULL);
+
+CREATE TABLE actionParams (
+id INTEGER NOT NULL PRIMARY KEY,
+action_id INT NOT NULL,
+key TEXT NOT NULL,
+dataType INT NOT NULL,
+FOREIGN KEY(action_id) REFERENCES action(id),
+FOREIGN KEY(dataType) REFERENCES dataTypes(id));

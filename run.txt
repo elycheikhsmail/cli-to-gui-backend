@@ -1,0 +1,4 @@
+deno run  --allow-all --unstable app.
+
+
+deno run  --allow-all --unstable appTest.ts

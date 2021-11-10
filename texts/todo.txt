@@ -1,0 +1,20 @@
+focus on rest api creation infast way
+mixt the ui app code for generating code with project code
+dbService belong the style in this directory
+put each test "function" in indivual file and store his relative path in sqlite db 
+select need tests to be runned via web ui
+generate the commande to run those tests and write it worker-for-test.js
+run.js (in server) : 
+    in test mode
+    run worker-for-prepare-test.js => self.postMessage("prepare-test-env")
+    .onmessage = (e) => {("prepare-test-env" => run worker-for-run-testserver) => self.postMessage("testserver-runned")
+    .onmessage = (e) => {  run worker-for-test }
+
+
+
+with sqlite date
+will be stored as 
+day
+month
+year
+date_number days between gived day and fixed date (1/1/2020)

@@ -1,0 +1,8 @@
+
+deno test --allow-all ./tests/domain.test.ts
+deno test --allow-all ./tests/categorie.test.ts
+deno test --allow-all ./tests/lieu.test.ts 
+deno test --allow-all --location=http://localhost ./tests/article-user.test.ts
+deno test --allow-all ./tests/article-public.test.ts 
+
+

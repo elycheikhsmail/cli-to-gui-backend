@@ -1,0 +1,15 @@
+prepare test 
+  delete sqlite file and replace it with new empty with tabes alredy created
+
+test add action retun message == ok and http status 200
+test list action length == 2 and http status 200
+test action by id 1 return http status 200 
+test action by id 100 return http status 404
+test delete by id 1 => getlist length == 1
+
+
+test add action-params retun message == ok and http status 200
+test list action-params length == 2 and http status 200
+test action-params by id 1 return http status 200 
+test action-params by id 100 return http status 404
+test delete-params by id 1 => getlist length == 1

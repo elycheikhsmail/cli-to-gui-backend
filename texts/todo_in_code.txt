@@ -1,0 +1,1 @@
+fetch actions data from api and display it in client page
